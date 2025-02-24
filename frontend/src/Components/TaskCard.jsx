@@ -53,14 +53,14 @@ function TaskCard({ task_id, isComplete, title, description }) {
                             name='title'
                             value={formData?.title}
                             onChange={handleChange}
-                            placeholder='Write your task here'
+                            placeholder='Edit your task title'
                             className="input input-bordered w-[80%] md:w-[50%] mt-3 block mx-auto"
                         />
                         <input type="text"
                             name='description'
                             value={formData?.description}
                             onChange={handleChange}
-                            placeholder='Write your task here'
+                            placeholder='Edit your task description'
                             className="input input-bordered w-[80%] md:w-[50%] mt-3 block mx-auto"
                         />
                         <div className="modal-action flex gap-2">
