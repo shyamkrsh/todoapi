@@ -30,7 +30,7 @@ function App() {
 
       {/* here task */}
 
-      <div className='h-[60vh] mt-5 overflow-x-hidden overflow-y-scroll relative'>
+      <div className='h-[50vh] mt-5 overflow-x-hidden overflow-y-scroll relative'>
 
         <div className={isDoneShow ? 'hidden' : 'block'}>
           <div className={tasks?.some(task => !task.isComplete) ? "hidden" : 'block'}>
