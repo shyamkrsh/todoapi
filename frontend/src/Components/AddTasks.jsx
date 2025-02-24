@@ -12,7 +12,9 @@ function AddTasks() {
 
     let handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`https://api.freeapi.app/api/v1/todos`, formData).catch((err) => {
+        axios.post(`https://api.freeapi.app/api/v1/todos`, formData).then(() => {
+            setFormData({ title: '', description: '' });
+        }).catch((err) => {
             console.log(err);
         })
     }
